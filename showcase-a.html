@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Showcase A — Google Profile + WhatsApp Catalogue (Anon Arch)</title>
+<style>
+  *{margin:0;padding:0;box-sizing:border-box}
+  body{font-family:-apple-system,"Segoe UI",Roboto,Arial,sans-serif;background:#e8e4da;color:#202124}
+  .page{max-width:430px;margin:0 auto;padding:18px 12px 34px}
+  .strip{text-align:center;font-size:11px;letter-spacing:.2em;font-weight:700;color:#5f6368;margin:4px 0 14px}
+  .strip b{color:#b8860b}
+  .cap{font-size:13px;color:#5f6368;text-align:center;margin:10px 6px 22px}
+  .cap b{color:#202124}
+  /* ---------- GOOGLE LISTING MOCK ---------- */
+  .g{background:#fff;border-radius:20px;box-shadow:0 2px 14px rgba(0,0,0,.14);overflow:hidden}
+  .g .photos{display:flex;gap:3px}
+  .g .photos img{width:50%;height:190px;object-fit:cover;display:block}
+  .g .body{padding:16px 18px 8px}
+  .g h1{font-size:21px;font-weight:600;line-height:1.25}
+  .g .rate{display:flex;align-items:center;gap:6px;margin-top:7px;font-size:13.5px;color:#5f6368}
+  .g .rate b{color:#202124;font-size:14.5px}
+  .stars{color:#fbbc04;font-size:15px;letter-spacing:1px}
+  .g .meta{font-size:13.5px;color:#5f6368;margin-top:5px;line-height:1.55}
+  .g .meta .open{color:#188038;font-weight:600}
+  .g .actions{display:flex;justify-content:space-between;padding:14px 14px 6px;border-top:1px solid #e8eaed;margin-top:14px}
+  .g .act{text-align:center;width:64px;text-decoration:none;display:block}
+  .g .act .ic{width:42px;height:42px;border:1.5px solid #dadce0;border-radius:50%;margin:0 auto 5px;
+               display:flex;align-items:center;justify-content:center;font-size:18px}
+  .g .act span{font-size:12px;color:#1a73e8;font-weight:500}
+  .g .rev{border-top:1px solid #e8eaed;padding:13px 18px}
+  .g .rev .who{display:flex;align-items:center;gap:9px}
+  .g .av{width:32px;height:32px;border-radius:50%;color:#fff;font-weight:600;font-size:14px;
+         display:flex;align-items:center;justify-content:center}
+  .g .rev .nm{font-size:13.5px;font-weight:600}
+  .g .rev .wh{font-size:11.5px;color:#5f6368}
+  .g .rev p{font-size:13.5px;margin-top:7px;line-height:1.5}
+  /* ---------- WHATSAPP MOCK ---------- */
+  .w{background:#ece5dd;border-radius:20px;box-shadow:0 2px 14px rgba(0,0,0,.14);overflow:hidden}
+  .w .hd{background:#075e54;color:#fff;display:flex;align-items:center;gap:11px;padding:12px 14px}
+  .w .hd .av{width:38px;height:38px;border-radius:50%;background:#c2913f;color:#171310;font-weight:800;
+              display:flex;align-items:center;justify-content:center;font-size:15px}
+  .w .hd .nm{font-size:15.5px;font-weight:600;line-height:1.2}
+  .w .hd .on{font-size:12px;color:#cfd8dc}
+  .w .hd .ic{margin-left:auto;font-size:17px;opacity:.95}
+  .w .chat{padding:14px 12px 6px}
+  .bub{max-width:82%;padding:8px 11px;border-radius:9px;font-size:13.5px;line-height:1.45;
+       box-shadow:0 1px 2px rgba(0,0,0,.13);margin-bottom:9px}
+  .bub.in{background:#fff}
+  .bub.out{background:#dcf8c6;margin-left:auto}
+  .bub .tm{display:block;text-align:right;font-size:10.5px;color:#7a8a7a;margin-top:3px}
+  .w .cat{background:#fff;margin:4px 12px 14px;border-radius:12px;box-shadow:0 1px 3px rgba(0,0,0,.15);overflow:hidden}
+  .w .cat .ch{padding:11px 13px;font-size:13px;font-weight:700;color:#075e54;border-bottom:1px solid #eee;
+              display:flex;justify-content:space-between}
+  .w .cat .ch span{color:#1a73e8;font-weight:600}
+  .grid{display:grid;grid-template-columns:1fr 1fr;gap:2px;background:#f0f0f0}
+  .item{background:#fff;padding:8px;text-decoration:none;color:inherit;display:block}
+  .item img{width:100%;height:104px;object-fit:cover;border-radius:8px;display:block}
+  .item .t{font-size:13px;font-weight:600;margin-top:7px}
+  .item .p{font-size:12.5px;color:#5f6368}
+  .mocktag{text-align:center;font-size:10.5px;letter-spacing:.18em;color:#9aa0a6;margin-top:8px}
+</style>
+</head>
+<body>
+<div class="page">
+  <div class="strip">SHOWCASE A · MADE BY <b>ANON ARCH</b></div>
+
+  <!-- GOOGLE LISTING -->
+  <div class="g">
+    <div class="photos">
+      <img src="img/hero.jpg" alt="Salon photo 1">
+      <img src="img/shop.jpg" alt="Salon photo 2">
+    </div>
+    <div class="body">
+      <h1>Urban Trim — Salon &amp; Grooming</h1>
+      <div class="rate"><b>4.9</b><span class="stars">★★★★★</span><span>(312 reviews)</span></div>
+      <p class="meta">Salon · Shop 12, MG Road, near City Mall<br>
+      <span class="open">Open</span> · Closes 9:00 PM · ☎ 098765 43210</p>
+    </div>
+    <div class="actions">
+      <a class="act" href="tel:+919876543210"><div class="ic">📞</div><span>Call</span></a>
+      <a class="act" href="https://wa.me/919876543210?text=Hi%2C%20I%20want%20to%20book%20a%20haircut"><div class="ic">💬</div><span>Chat</span></a>
+      <a class="act" href="https://www.google.com/maps/search/?api=1&amp;query=Urban+Trim+Salon+MG+Road"><div class="ic">➤</div><span>Directions</span></a>
+      <a class="act" href="index.html"><div class="ic">🌐</div><span>Website</span></a>
+      <a class="act" href="https://wa.me/?text=Urban%20Trim%20Salon%20%E2%80%94%20best%20haircut%20on%20MG%20Road!"><div class="ic">↗</div><span>Share</span></a>
+    </div>
+    <div class="rev">
+      <div class="who"><div class="av" style="background:#7b1fa2">A</div>
+        <div><div class="nm">Amit S.</div><div class="wh">2 weeks ago · <span class="stars">★★★★★</span></div></div></div>
+      <p>"Best haircut in this area. Booked on WhatsApp, no waiting at all."</p>
+    </div>
+    <div class="rev">
+      <div class="who"><div class="av" style="background:#00695c">R</div>
+        <div><div class="nm">Rahul V.</div><div class="wh">a month ago · <span class="stars">★★★★★</span></div></div></div>
+      <p>"Clean tools, fair prices. Found them on Google Maps only."</p>
+    </div>
+  </div>
+  <p class="cap"><b>Google par shop aisi dikhegi</b> — jab koi "salon near me" search karega.<br>Call / Chat / Directions — teeno button seedha customer ko shop tak.</p>
+
+  <!-- WHATSAPP CATALOGUE -->
+  <div class="w">
+    <div class="hd">
+      <div class="av">UT</div>
+      <div><div class="nm">Urban Trim Salon</div><div class="on">online · Business Account</div></div>
+      <div class="ic">📞</div>
+    </div>
+    <div class="chat">
+      <div class="bub in">Namaste 🙏 Haircut ke liye aaj ka slot milega?<span class="tm">11:02 AM</span></div>
+      <div class="bub out">Namaste! Haan, 4 baje free hai. Neeche catalogue se service choose karke bhej dijiye, hum confirm kar denge ✅<span class="tm">11:03 AM ✓✓</span></div>
+    </div>
+    <div class="cat">
+      <div class="ch">CATALOGUE <span>See all</span></div>
+      <div class="grid">
+        <a class="item" href="https://wa.me/919876543210?text=I%20want%20to%20book%3A%20Haircut%20%E2%82%B9199"><img src="img/hero.jpg" alt=""><div class="t">Haircut</div><div class="p">₹199</div></a>
+        <a class="item" href="https://wa.me/919876543210?text=I%20want%20to%20book%3A%20Beard%20Trim%20%E2%82%B999"><img src="img/shop.jpg" alt=""><div class="t">Beard Trim &amp; Shape</div><div class="p">₹99</div></a>
+        <a class="item" href="https://wa.me/919876543210?text=I%20want%20to%20book%3A%20Haircut%20%2B%20Beard%20Combo%20%E2%82%B9249"><img src="img/shop.jpg" style="object-position:top" alt=""><div class="t">Haircut + Beard Combo</div><div class="p">₹249</div></a>
+        <a class="item" href="https://wa.me/919876543210?text=I%20want%20to%20book%3A%20Clean-up%20%2F%20Facial%20%E2%82%B9499"><img src="img/hero.jpg" style="object-position:bottom" alt=""><div class="t">Clean-up / Facial</div><div class="p">₹499</div></a>
+      </div>
+    </div>
+  </div>
+  <p class="cap"><b>WhatsApp catalogue aisa dikhega</b> — customer chat ke andar hi<br>services + prices dekh ke order/book karega.</p>
+
+  <div class="mocktag">MOCKUP — SHOP NAME, REVIEWS &amp; PHOTOS ARE SAMPLES</div>
+</div>
+</body>
+</html>
