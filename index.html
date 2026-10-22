@@ -98,8 +98,8 @@
 					<h2>Visit Us</h2>
 					<p>Shop 12, MG Road — near City Mall.<br />Mon–Sat: 10 AM – 9 PM · Sunday: 11 AM – 8 PM</p>
 					<ul class="actions stacked">
-						<li><a href="https://www.google.com/maps/search/?api=1&amp;query=salon+MG+Road" class="button primary big wide">Get Directions</a></li>
-						<li><a href="https://wa.me/919876543210?text=Hi%2C%20I%20want%20to%20book%20a%20haircut" class="button big wide">Book on WhatsApp</a></li>
+						<li><a href="https://wa.me/919876543210?text=Hi%2C%20I%20want%20to%20book%20a%20haircut" class="button primary big wide">Book on WhatsApp</a></li>
+						<li><a href="https://www.google.com/maps/search/?api=1&amp;query=salon+MG+Road" class="button big wide">Get Directions</a></li>
 					</ul>
 				</div>
 			</section>
@@ -122,5 +122,8 @@
 		<script src="assets/js/util.js"></script>
 		<script src="assets/js/main.js"></script>
 
+		<!-- Sticky WhatsApp booking bar (mobile-first: the booking is always one tap away) -->
+		<style>body{padding-bottom:60px} .wa-bar{position:fixed;left:0;right:0;bottom:0;z-index:9999;background:#128C4B;color:#fff;text-align:center;padding:15px 10px;font-weight:700;font-size:16px;text-decoration:none;box-shadow:0 -2px 12px rgba(0,0,0,.25)} .wa-bar:active{background:#0e733d}</style>
+		<a class="wa-bar" href="https://wa.me/919876543210?text=Hi%2C%20I%20want%20to%20book%20a%20haircut">💬 Book on WhatsApp — 10 seconds</a>
 	</body>
 </html>
